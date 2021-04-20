@@ -3,7 +3,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div, section, article, footer, main, aside, header{
+article, section, div, footer, main, aside, header{
     padding: 3vw;
     margin: 3vw;
 }
@@ -12,24 +12,26 @@ div, section, article, footer, main, aside, header{
 /* CSS PARA DISPOSITIVOS PEQUEÑOS*/
 /* HEADER*/
 #header{
-    background-color: black;
+    background-image: url("../images/cabecera.jpg");
+    background-position: center;
+    background-size: 180%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
 }
 
 #header-content{
-    background-color:darkslateblue;
     display: flex;
     flex-direction: column;
 }
 
-#img-cabecera{
-    background-color: gold;
-    width: 100%;
+#header-logo{
+    display: flex;
+    justify-content: center;
 }
 
-#header-logo{
-    background-color:crimson;
+.logo-head{
+    width: 30vw;
 }
 
 #header-nav{
@@ -41,9 +43,17 @@ div, section, article, footer, main, aside, header{
 }
 
 #header-img{
-    background-color:sandybrown;
+    background-color:lightgray;
     display: flex;
+    opacity: 0.45;
     justify-content: center;
+}
+
+#img-cabecera{
+    width: 100%;
+    text-align: center;
+    font-family: serif;
+    color: crimson;
 }
 
 /*FOOTER*/
@@ -90,23 +100,26 @@ div, section, article, footer, main, aside, header{
 /*CSS PARA TABLETS*/
 @media only screen and (min-width: 768px) {
 
-    section, article, div, footer, main, aside, header{
+    article, section, div, footer, main, aside, header{
         padding: 1.5vw;
         margin: 1.5vw;
     }
+
+    .logo-head{
+        width: 9vw;
+    }
     
     #header-content{
-        background-color:darkslateblue;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     #header-logo{
-        width: 22%;
+        width: 8%;
     }
     
     #header-nav{
-        width: 50%;
+        width: 60%;
     }
     
     #header-social{
@@ -151,7 +164,7 @@ div, section, article, footer, main, aside, header{
 /*CSS PARA DESKTOP y ALTAS RESOLUCIONES*/
 @media only screen and (min-width: 992px) {
 
-    section, article, div, footer, main, aside, header{
+    article, section, div, footer, main, aside, header{
         padding: 1vw;
         margin: 1vw;
     }
