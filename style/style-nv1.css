@@ -1,0 +1,110 @@
+html{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+}
+
+
+#header{
+    background-color: black;
+    padding: 2vw;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-content{
+    background-color:darkslateblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+    height: 2vw;
+}
+#header-logo{
+    background-color:crimson;
+    width: 22%;
+}
+
+#header-nav{
+    background-color: crimson;;
+    width: 50%;
+}
+
+#header-social{
+    background-color: crimson;;
+    width: 22%;
+}
+
+#header-img{
+    background-color:sandybrown;
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+}
+
+#img-cabecera{
+    background-color: gold;
+    width: 100%;
+    height: 4vw;
+    padding: 2vw;
+}
+
+#main{
+    background-color: black;
+    padding: 2vw;
+    margin: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#page-content{
+    background-color: blueviolet;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.page-item{
+    background-color: cornflowerblue;
+    padding: 2vw;
+    margin: 2vw;
+    height: 1vw;
+    width: 37%;
+    height: 2vw;
+}
+
+.page-item-full{
+    background-color:deepskyblue;
+    width: 100%;
+    padding: 2vw;
+    margin: 2vw;
+}
+
+#lateral-bar{
+    background-color: crimson;
+    padding: 2vw;
+    width: 23%;
+}
+
+.lateral-content{
+    padding: 2vw;
+    margin-bottom: 2vw;
+    background-color:gold;
+}
+
+#footer{
+    background-color: black;
+    padding: 2vw;
+    margin: 2vw;
+}
+
+#footer-content{
+    background-color: burlywood;
+    padding: 2vw;
+}

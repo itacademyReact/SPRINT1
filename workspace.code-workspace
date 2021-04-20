@@ -1,10 +1,16 @@
 {
 	"folders": [
 		{
+			"name": "JAVA",
 			"path": "..\\..\\..\\FDLP\\JAVA"
 		},
 		{
+			"name": "JS",
 			"path": "..\\..\\..\\FDLP\\JS"
+		},
+		{
+			"name": "SPRINT1",
+			"path": "."
 		}
 	],
 	"settings": {
