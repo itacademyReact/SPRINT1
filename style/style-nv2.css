@@ -1,11 +1,11 @@
 html{
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 
 article, section, div, footer, main, aside, header{
-    padding: 2vw;
-    margin: 2vw;
+    padding: 1vw;
+    margin: 1vw;
 }
 
 
@@ -22,14 +22,18 @@ article, section, div, footer, main, aside, header{
 
 #header-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
 }
 #header-logo{
     display: flex;
     margin: 0;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    order: 0;
+    width: 55%;
 }
 
 .logo-head{
@@ -38,35 +42,60 @@ article, section, div, footer, main, aside, header{
 
 #header-nav{
     margin: 0;
+    order: 3;
+    width: 100%;
 }
-
 
 #navbar{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0;
+    padding: 0;
 }
 
-.navitem{
+.nav-item{
     list-style-type: none;
-    font-size: 1.7vh;
+    font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color:dimgrey;
-    margin: auto;
+    color:gray;
+    margin: 0.8vw auto;
+    background-color: rgba(211, 211, 211,0.93);
+    box-shadow: 2px 4px 6px -0.5px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.7vw;
+    text-align: center;
+    
+}
+
+.nav-item a{
+    text-decoration: none;
+    color:gray;
+}
+
+.nav-item p {
+    display: inline;
+    height: 2.3vh;
+    padding: auto 0;
 }
 
 .nav-logo{
     height: 2.3vh;
-    padding-right: 0.5vw;
+    padding-right: 0.3vw;
 }
 
 #header-social{
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
+    order: 1;
+    width: 10%;
+    height: 10vh;
 }
 
 
@@ -83,9 +112,9 @@ article, section, div, footer, main, aside, header{
 #header-txt{
     background-color:lightgray;
     display: flex;
-    opacity: 0.6;
+    opacity: 0.3;
     justify-content: center;
-    overflow: hidden;
+    margin: 0;
 }
 
 #txt-cabecera{
@@ -111,36 +140,82 @@ article, section, div, footer, main, aside, header{
     background-color: burlywood;
 }
 
-/*MAIN*/    
+/*MAIN*/
     #main{
-        background-color: gold;
+        background-color:lightgray;
         display: flex;
         flex-direction: column;
-        margin: 4vw 2vw;
+        margin: 2vw 1vw;
     }
 
     #page-content{
-        background-color:darkslategray;
+        background-color:gainsboro;
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: .75vh;
     }
     
-    .page-item{
-        background-color:lightsteelblue;    
+    .section-item{
         margin-bottom: 1vw;
+        background-position: center;
+        margin: 0;
+        padding: 0;
     }
 
-    .page-item-full{
-        background-color:deepskyblue;
+    .section-item-full{
+        margin-bottom: 1vw;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #cherry{
+        background-image: url(../images/cherry.jpg);
+        background-position: center;
+        background-size: 100%;
+        height: 40vh;
+    }
+
+    #bamboo{
+        background-image: url(../images/bamboo.png);
+    }
+    
+    .fecha-img{
+        color: lightgray;
+    }
+
+    .section-img{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #page-content div{
+        margin: 0;
+    }
+
+    .section-title{
+        background-color: crimson;
+        height: 4vh;
+        font-weight: 600;
+        color:gainsboro;
+        font-size: 2.5vh;
+    }
+
+    .section-texto{
+        background-color: gainsboro;
     }
 
     #lateral-bar{
-        background-color:coral;
+        background-color:gainsboro;
+        margin: 0;
     }
     
     .lateral-content{
-        background-color:sandybrown;
-        margin-bottom: 2vw;
+        background-color:gainsboro;
+        margin:0;
+        background-position: center;
     }
 
 /*CSS PARA TABLETS*/
@@ -156,28 +231,29 @@ article, section, div, footer, main, aside, header{
     }
 
     article, section, div, footer, main, aside, header{
-        padding: 1.5vw;
-        margin: 1.5vw;
+        padding: 0.75vw;
+        margin: 0.75vw;
     }
     
     #header-content{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items:center;
         height: 12vh;
+        flex-wrap: nowrap;
     }
     #header-logo{
         width: 10%;
         align-self: baseline;
+        justify-content: flex-start;
     }
 
     .logo-head{
-        height: 8vh;
+        height: 9vh;
     }
     
     #header-nav{
-        width: 80%;
+        width: 75%;
     }
     
     #navbar{
@@ -187,44 +263,38 @@ article, section, div, footer, main, aside, header{
         align-items: center;
     }
 
+    .nav-item{
+        background-color: transparent;
+        box-shadow: none;
+        font-size: min(1.5vw, 20pt);
+    }
+
     #header-social{
         width: 10%;
-        flex-direction: column;
+        order: 3;
     }
 
     #main{
-        background-color: yellow;
         display: flex;
         flex-direction: column;
-        margin: 3vw 1.5vw;
+        margin: 1.5vw 0.75vw;
     }
     
     #page-content{
-        background-color: blueviolet;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     
-    .page-item{
-        background-color: cornflowerblue;    
+    .section-item{
         margin-bottom: 1vw;
-        width: 42%;
+        width: 50%;
     }
 
-    .page-item-full{
+    .section-item-full{
         width: 100%;
     }
-
-    #lateral-bar{
-        background-color: crimson;
-    }
-    
-    .lateral-content{
-        background-color:gold;
-    }
-
 }
 
 /*CSS PARA DESKTOP y ALTAS RESOLUCIONES*/
@@ -235,35 +305,36 @@ article, section, div, footer, main, aside, header{
     }
 
     article, section, div, footer, main, aside, header{
-        padding: 1vw;
-        margin: 1vw;
+        padding: 0.5vw;
+        margin: 0.5vw;
+    }
+
+    #header-nav{
+        max-width: 60%;
     }
     
     #main{
-        background-color: black;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 2vw 1vw;
+        margin: 1vw 0.5vw;
     }
     
     #page-content{
-        background-color: blueviolet;
-        width: 70%;
+        width: 74%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     
-    .page-item{
-        background-color: cornflowerblue;    
+    .section-item{
         margin-bottom: 1vw;
         width: 43%;
     }
     
     #lateral-bar{
-        width: 23%;
+        width: 22.5%;
     }
 
 }
