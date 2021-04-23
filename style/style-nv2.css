@@ -3,7 +3,7 @@ html{
     font-family:'Montserrat', sans-serif;
 }
 
-article, section, div, footer, main, aside, header{
+footer, main,aside, header{
     padding: 1vw;
     margin: 1vw;
 }
@@ -41,7 +41,6 @@ article, section, div, footer, main, aside, header{
 }
 
 #header-nav{
-    margin: 0;
     order: 3;
     width: 100%;
 }
@@ -51,8 +50,8 @@ article, section, div, footer, main, aside, header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
     padding: 0;
+    margin: 2vh;
 }
 
 .nav-item{
@@ -95,12 +94,12 @@ article, section, div, footer, main, aside, header{
     align-items: flex-end;
     order: 1;
     width: 10%;
-    height: 10vh;
+    height: 8vh;
 }
 
 
 .img-social{
-    height: 2.5vh;
+    height: 2vh;
     padding: 0.5vh;
 }
 
@@ -133,11 +132,12 @@ article, section, div, footer, main, aside, header{
 
 /*FOOTER*/
 #footer{
-    background-color: black;
+    background-color: lightgray;
 }
 
 #footer-content{
-    background-color: burlywood;
+    background-color: gainsboro;
+    min-height: 8vh;
 }
 
 /*MAIN*/
@@ -145,7 +145,6 @@ article, section, div, footer, main, aside, header{
         background-color:lightgray;
         display: flex;
         flex-direction: column;
-        margin: 2vw 1vw;
     }
 
     #page-content{
@@ -154,13 +153,12 @@ article, section, div, footer, main, aside, header{
         flex-direction: column;
         margin: 0;
         padding: .75vh;
+        margin-bottom: 1vh;
     }
     
     .section-item{
         margin-bottom: 1vw;
         background-position: center;
-        margin: 0;
-        padding: 0;
     }
 
     .section-item-full{
@@ -172,9 +170,6 @@ article, section, div, footer, main, aside, header{
 
     #cherry{
         background-image: url(../images/cherry.jpg);
-        background-position: center;
-        background-size: 100%;
-        height: 40vh;
     }
 
     #bamboo{
@@ -182,29 +177,41 @@ article, section, div, footer, main, aside, header{
     }
     
     .fecha-img{
-        color: lightgray;
+        color: gainsboro;
     }
 
     .section-img{
         display:flex;
         flex-direction: column;
         justify-content: flex-end;
+        background-position: center;
+        background-size: auto;
+        min-height: 35vh;
     }
-
-    #page-content div{
-        margin: 0;
-    }
-
+    
     .section-title{
         background-color: crimson;
-        height: 4vh;
+        height: 6vh;
         font-weight: 600;
         color:gainsboro;
         font-size: 2.5vh;
+        display: flex;
     }
 
     .section-texto{
         background-color: gainsboro;
+        font-size: 1.8vh;
+    }
+
+    .section-link{
+        margin-top: -1vh;
+    }
+
+    .section-link a{
+        text-decoration: none;
+        color: gray;
+        font-weight: 500;
+        font-size: 2vh;
     }
 
     #lateral-bar{
@@ -215,7 +222,11 @@ article, section, div, footer, main, aside, header{
     .lateral-content{
         background-color:gainsboro;
         margin:0;
+        padding: 0;
         background-position: center;
+        height: 100%;
+        min-height: 20vh;
+        background-clip: content-box;
     }
 
 /*CSS PARA TABLETS*/
@@ -230,7 +241,7 @@ article, section, div, footer, main, aside, header{
         justify-content: space-between;
     }
 
-    article, section, div, footer, main, aside, header{
+    footer, main, header{
         padding: 0.75vw;
         margin: 0.75vw;
     }
@@ -304,7 +315,7 @@ article, section, div, footer, main, aside, header{
         background-size: 120%;
     }
 
-    article, section, div, footer, main, aside, header{
+    article, main, footer, aside, header{
         padding: 0.5vw;
         margin: 0.5vw;
     }
@@ -317,7 +328,6 @@ article, section, div, footer, main, aside, header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 1vw 0.5vw;
     }
     
     #page-content{
@@ -326,6 +336,8 @@ article, section, div, footer, main, aside, header{
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 0;
+
     }
     
     .section-item{
