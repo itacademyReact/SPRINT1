@@ -1,6 +1,7 @@
 html{
     background-color: white;
     font-family:'Montserrat', sans-serif;
+    color: darkslategray;
 }
 
 footer, main,aside, header{
@@ -26,6 +27,7 @@ footer, main,aside, header{
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
+    padding: 0 1vw;
 }
 #header-logo{
     display: flex;
@@ -56,8 +58,7 @@ footer, main,aside, header{
 
 .nav-item{
     list-style-type: none;
-    font-size: 2vh;
-    font-family: 'Montserrat', sans-serif;
+    font-size: min(2vh, 20pt);
     font-weight: 500;
     color:gray;
     margin: 0.8vw auto;
@@ -67,7 +68,6 @@ footer, main,aside, header{
     width: 100%;
     padding: 0.7vw;
     text-align: center;
-    
 }
 
 .nav-item a{
@@ -86,9 +86,14 @@ footer, main,aside, header{
     padding-right: 0.3vw;
 }
 
+svg:hover path{
+    fill: crimson;
+}
+
 #header-social{
     margin: 0;
     display: flex;
+    font-size: min(1.5vh, 15pt);
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
@@ -111,7 +116,7 @@ footer, main,aside, header{
 #header-txt{
     background-color:lightgray;
     display: flex;
-    opacity: 0.3;
+    opacity: 0.35;
     justify-content: center;
     margin: 0;
 }
@@ -137,7 +142,15 @@ footer, main,aside, header{
 
 #footer-content{
     background-color: gainsboro;
-    min-height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 5vh;
+    padding: 0 1vh;
+}
+
+#footer p{
+    margin: 0 1vw;
 }
 
 /*MAIN*/
@@ -156,28 +169,23 @@ footer, main,aside, header{
         margin-bottom: 1vh;
     }
     
-    .section-item{
+    section{
         margin-bottom: 1vw;
-        background-position: center;
-    }
-
-    .section-item-full{
-        margin-bottom: 1vw;
-        background-position: center;
-        margin: 0;
-        padding: 0;
     }
 
     #cherry{
         background-image: url(../images/cherry.jpg);
     }
 
-    #bamboo{
-        background-image: url(../images/bamboo.png);
+    #sidebar{
+        background-image: url(../images/orange.jpg);
     }
     
     .fecha-img{
         color: gainsboro;
+        font-size: 2vh;
+        font-weight: 600;
+        margin-bottom: -.5vh;
     }
 
     .section-img{
@@ -185,26 +193,34 @@ footer, main,aside, header{
         flex-direction: column;
         justify-content: flex-end;
         background-position: center;
-        background-size: auto;
+        background-size:cover;
         min-height: 35vh;
+        padding: 0 1vh;
     }
     
     .section-title{
         background-color: crimson;
-        height: 6vh;
+        height: 4vh;
         font-weight: 600;
         color:gainsboro;
-        font-size: 2.5vh;
+        font-size: 3vh;
         display: flex;
+        padding: 1vh;
+    }
+
+    .title{
+        position: relative;
+        top:-0.8vh;
     }
 
     .section-texto{
-        background-color: gainsboro;
+        color: gray;
         font-size: 1.8vh;
+        padding: 0 1vh;
     }
 
     .section-link{
-        margin-top: -1vh;
+        margin: 0;
     }
 
     .section-link a{
@@ -212,6 +228,11 @@ footer, main,aside, header{
         color: gray;
         font-weight: 500;
         font-size: 2vh;
+    }
+
+    .section-link :hover{
+        color: crimson;
+        text-shadow: 2px 2px 4px gray;
     }
 
     #lateral-bar{
@@ -223,10 +244,12 @@ footer, main,aside, header{
         background-color:gainsboro;
         margin:0;
         padding: 0;
-        background-position: center;
         height: 100%;
         min-height: 20vh;
+        background-position: center;
         background-clip: content-box;
+        background-size: cover;
+        background-position-y: 0;
     }
 
 /*CSS PARA TABLETS*/
@@ -236,12 +259,7 @@ footer, main,aside, header{
         background-size: 180%;
     }
 
-    #navbar{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    footer, main, header{
+    article, main, footer, aside, header{
         padding: 0.75vw;
         margin: 0.75vw;
     }
@@ -249,6 +267,7 @@ footer, main,aside, header{
     #header-content{
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
         align-items:center;
         height: 12vh;
         flex-wrap: nowrap;
@@ -263,32 +282,34 @@ footer, main,aside, header{
         height: 9vh;
     }
     
-    #header-nav{
-        width: 75%;
-    }
-    
     #navbar{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
     }
 
     .nav-item{
         background-color: transparent;
         box-shadow: none;
-        font-size: min(1.5vw, 20pt);
+        font-size: min(3vh, 15px);
+    }
+
+    .nav-item:hover{
+        color: crimson;
+        fill: crimson;
+        text-shadow: 2px 2px 4px lightgrey;
     }
 
     #header-social{
         width: 10%;
         order: 3;
+        align-content: flex-end;
+        margin-left: auto;
     }
 
     #main{
         display: flex;
         flex-direction: column;
-        margin: 1.5vw 0.75vw;
     }
     
     #page-content{
@@ -321,7 +342,11 @@ footer, main,aside, header{
     }
 
     #header-nav{
-        max-width: 60%;
+        max-width: min(60%, 800px);
+    }
+
+    #header-logo{
+        max-width: 8%;
     }
     
     #main{
@@ -331,22 +356,27 @@ footer, main,aside, header{
     }
     
     #page-content{
-        width: 74%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        flex-grow: 1;
+        margin-right: 0.5vw;
         margin-bottom: 0;
 
     }
     
     .section-item{
         margin-bottom: 1vw;
-        width: 43%;
+        width: 50%;
+    }
+
+    .section-item-full{
+        width: 100%;
     }
     
     #lateral-bar{
-        width: 22.5%;
+        width: 35%;
     }
 
 }
