@@ -35,7 +35,7 @@ footer, main,aside, header{
     align-items: center;
     justify-content: flex-end;
     order: 0;
-    width: 55%;
+    width: 60%;
 }
 
 .logo-head{
@@ -63,11 +63,15 @@ footer, main,aside, header{
     color:gray;
     margin: 0.8vw auto;
     background-color: rgba(211, 211, 211,0.93);
-    box-shadow: 2px 4px 6px -0.5px;
+    box-shadow: 2px 2px 6px gray;
     border-radius: 5px;
     width: 100%;
     padding: 0.7vw;
     text-align: center;
+}
+
+.nav-item:hover{
+    background-color: gainsboro;    
 }
 
 .nav-item a{
@@ -84,10 +88,6 @@ footer, main,aside, header{
 .nav-logo{
     height: 2.3vh;
     padding-right: 0.3vw;
-}
-
-svg:hover path{
-    fill: crimson;
 }
 
 #header-social{
@@ -108,6 +108,7 @@ svg:hover path{
     padding: 0.5vh;
 }
 
+
 #header-social a{
     padding: 0;
     text-decoration: none;
@@ -119,6 +120,7 @@ svg:hover path{
     opacity: 0.35;
     justify-content: center;
     margin: 0;
+    box-shadow: 2px 2px 4px gray;
 }
 
 #txt-cabecera{
@@ -147,6 +149,7 @@ svg:hover path{
     align-items: center;
     min-height: 5vh;
     padding: 0 1vh;
+    
 }
 
 #footer p{
@@ -167,6 +170,7 @@ svg:hover path{
         margin: 0;
         padding: .75vh;
         margin-bottom: 1vh;
+        
     }
     
     section{
@@ -232,12 +236,14 @@ svg:hover path{
 
     .section-link :hover{
         color: crimson;
-        text-shadow: 2px 2px 4px gray;
+        font-weight: 700;
+        text-shadow: 3px 3px 6px gray;
     }
 
     #lateral-bar{
         background-color:gainsboro;
         margin: 0;
+        
     }
     
     .lateral-content{
@@ -259,7 +265,7 @@ svg:hover path{
         background-size: 180%;
     }
 
-    article, main, footer, aside, header{
+    footer, main,aside, header{
         padding: 0.75vw;
         margin: 0.75vw;
     }
@@ -295,9 +301,7 @@ svg:hover path{
     }
 
     .nav-item:hover{
-        color: crimson;
-        fill: crimson;
-        text-shadow: 2px 2px 4px lightgrey;
+        background:transparent;
     }
 
     #header-social{
@@ -336,7 +340,7 @@ svg:hover path{
         background-size: 120%;
     }
 
-    article, main, footer, aside, header{
+    footer, main,aside, header{
         padding: 0.5vw;
         margin: 0.5vw;
     }
