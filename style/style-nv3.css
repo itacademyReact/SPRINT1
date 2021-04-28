@@ -312,7 +312,8 @@ footer, main, aside, header{
     }
 
     .nav-item:hover{
-        background: linear-gradient(90deg, rgba(220, 220, 220, 0) 0%, rgba(220, 220, 220, 1) 50%, rgba(220, 220, 220, 0) 100%);    }
+        background: linear-gradient(90deg, rgba(220, 220, 220, 0) 0%, rgba(220, 220, 220, 1) 50%, rgba(220, 220, 220, 0) 100%);
+    }
 
     #header-social{
         grid-column: 3;

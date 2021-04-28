@@ -108,6 +108,9 @@ footer, main,aside, header{
     padding: 0.5vh;
 }
 
+.social:hover{
+    background: radial-gradient(circle at center, gainsboro 0, transparent 70%);
+}
 
 #header-social a{
     padding: 0;
@@ -301,7 +304,7 @@ footer, main,aside, header{
     }
 
     .nav-item:hover{
-        background:transparent;
+        background: linear-gradient(90deg, rgba(220, 220, 220, 0) 0%, rgba(220, 220, 220, 1) 50%, rgba(220, 220, 220, 0) 100%);
     }
 
     #header-social{
